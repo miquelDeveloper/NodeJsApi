@@ -1,4 +1,4 @@
-# Node.js Express API
+# Node.js Express API.
 
 A secure REST API for managing users with MongoDB, featuring authentication, validation, and comprehensive testing.
 
