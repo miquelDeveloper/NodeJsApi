@@ -4,7 +4,17 @@ const User = require('../../src/models/user');
 
 describe('User API Integration Tests', () => {
     beforeEach(async () => {
+        // Clear all users before each test
         await User.deleteMany({});
+        
+        // Also clear any other collections that might exist
+        const collections = require('mongoose').connection.collections;
+        for (const key in collections) {
+            const collection = collections[key];
+            if (collection.collectionName !== 'users') {
+                await collection.deleteMany({});
+            }
+        }
     });
 
     it('should create a new user', async () => {
