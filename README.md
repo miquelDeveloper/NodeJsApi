@@ -24,8 +24,8 @@ A secure REST API for managing users with MongoDB, featuring authentication, val
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
-   cd node-express-api
+   git clone https://github.com/miquelDeveloper/NodeJsApi.git
+   cd NodeJsApi
    ```
 
 2. **Install dependencies:**
